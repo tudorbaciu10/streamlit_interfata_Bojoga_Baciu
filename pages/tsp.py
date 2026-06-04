@@ -402,8 +402,8 @@ def render():
 
         bm_c1, bm_c2 = st.columns(2)
         with bm_c1:
-            bm_sizes = st.multiselect(t("tsp_bm_sizes"), [5, 8, 10, 12, 15],
-                                      default=[5, 8, 10, 12], key="bm_sizes")
+            bm_sizes = st.multiselect(t("tsp_bm_sizes"), [5, 10, 20, 30, 50, 75, 100],
+                                      default=[5, 10, 20, 50], key="bm_sizes")
             bm_seeds = st.slider(t("tsp_bm_seeds"), 1, 5, 3, key="bm_seeds")
         with bm_c2:
             st.markdown(f"**{t('tsp_bm_algos')}**")
